@@ -13,7 +13,15 @@ export default function Products() {
         className="hstack hcenter"
         style={{ flex: 1, width: "95%", height: "100%", flexWrap: "wrap" }}
       >
-        <div style={{ flex: 1, minWidth: "30em", alignItems: "flex-start" }}>
+        <div
+          style={{
+            flex: 1,
+            minWidth: "30em",
+            alignItems: "flex-start",
+            padding: "1em",
+            maxWidth: "90%",
+          }}
+        >
           <img
             src={LocomotiveAppIcon}
             style={{
@@ -22,7 +30,7 @@ export default function Products() {
               border: "3px solid black",
             }}
           />
-          <h2>AmTrack: Track Amtrak Trains</h2>
+          <h2 style={{ maxWidth: "70%" }}>AmTrack: Track Amtrak Trains</h2>
           <ul
             className="vstack"
             style={{
@@ -30,6 +38,7 @@ export default function Products() {
               marginRight: "auto",
               padding: 0,
               gap: "1.25em",
+              maxWidth: "70%",
             }}
           >
             <li>
@@ -97,6 +106,8 @@ export default function Products() {
               width: "10em",
               borderRadius: "2em",
               border: "3px solid black",
+              paddingBottom: "1em",
+              background: "white",
             }}
           />
           <h2>MarcMap</h2>
@@ -107,6 +118,8 @@ export default function Products() {
               marginRight: "auto",
               padding: 0,
               gap: "1.25em",
+              maxWidth: "70%",
+              marginLeft: ".5em",
             }}
           >
             <li>
@@ -137,7 +150,13 @@ export default function Products() {
             </li>
             <li>Fully Open-Source</li>
           </ul>
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              paddingBottom: "2em",
+            }}
+          >
             <a href="https://github.com/qpxdesign/marc-map-ios">
               <img
                 src={Github}

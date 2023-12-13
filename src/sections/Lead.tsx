@@ -19,6 +19,14 @@ export default function Lead() {
     "https://ucm.calpoly.edu/sites/ucm.calpoly.edu/files/inline-images/logo_page_graphics-07%20%281%29.png",
     "https://seeklogo.com/images/U/university-of-british-columbia-logo-F4496C20CA-seeklogo.com.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/WMATA_Metro_Logo.svg/1601px-WMATA_Metro_Logo.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/1020px-Georgetown_Hoyas_logo.svg.png",
+    "https://santacruzcoe.org/wp-content/uploads/2021/06/logo@2x.png",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/1200px-Michigan_State_Athletics_logo.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/United_States_Coast_Guard_Academy_seal.svg/1200px-United_States_Coast_Guard_Academy_seal.svg.png",
+    "https://www.nih.gov/sites/default/files/about-nih/2012-logo.png",
+    "https://www.clemson.edu/brand/resources/logos/wordmark-primary/clemson+paw_regalia+orange.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Seal_of_the_United_States_Federal_Reserve_System.svg/2048px-Seal_of_the_United_States_Federal_Reserve_System.svg.png",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Morgan_State_University_Logo.svg/1200px-Morgan_State_University_Logo.svg.png",
   ];
   const showcaseRef = useRef<any>(null);
   const [activeImageIndex, setActiveImageIndex] = useState<number>(0);
@@ -51,7 +59,7 @@ export default function Lead() {
 
   return (
     <section
-      className="blur-image full-center"
+      className="blur-image full-center lead"
       style={{
         backgroundImage:
           "url(https://images.unsplash.com/photo-1549496620-037fca760261?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
@@ -99,8 +107,8 @@ export default function Lead() {
             padding: "1em 2em",
             gap: "2em",
             borderRadius: "1em",
-            maxWidth: "90vw",
-            overflowX: "scroll",
+            width: "min(80em,80vw)",
+            overflow: "scroll",
           }}
         >
           {logo_links.map((link: any) => {
@@ -118,6 +126,7 @@ export default function Lead() {
           style={{
             zIndex: 999,
             marginTop: "7.5rem",
+            marginBottom: "1rem",
             border: "none",
             fontFamily: "montserrat",
             fontSize: "1.5em",
